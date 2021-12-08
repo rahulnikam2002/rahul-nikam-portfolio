@@ -1,0 +1,37 @@
+.serviceAreaStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 95%;
+  margin: 200px auto 50px auto;
+  background-image: url("../../../public/img/blob3.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 25%;
+  background-position-y: -120px;
+}
+
+.serviceAreaStyle .my_competent {
+  width: 50%;
+}
+
+.serviceAreaStyle .my_competent .highlight {
+  color: #3851b8;
+}
+
+.serviceAreaStyle .my_competent h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.serviceAreaStyle .my_competent p {
+  font-size: 18px;
+  width: 90%;
+}
+/*# sourceMappingURL=service-area.styles.css.map */

@@ -1,0 +1,52 @@
+@import '../../../styles breakpoints/breakpoints.scss';
+
+
+.contact_option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media('<=phone'){
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .contact_option_single_block{
+        width: 10%;
+        text-align: center;
+        margin: 0px 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 15px 10px;
+        border-radius: 10px;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        @include media('<=phone'){
+            width: 35%;
+            margin: 10px;
+        }
+
+        .phone_call{
+            // color: #3a62ff;
+            color: #FF0066;
+        }
+        
+        .location{
+            color: #3a62ff;
+        }
+
+        .whatsapp_me{
+            color: #25D366;
+        }
+
+        .mail_me{
+            color: #db4437;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+}

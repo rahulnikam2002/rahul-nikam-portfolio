@@ -1,0 +1,64 @@
+@import "../../styles breakpoints/breakpoints.scss";
+
+.content_area {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+
+  @include media("<=phone") {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .left_content {
+    width: 65%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 20px;
+
+      @include media('<=phone'){
+        width: 90%;
+        margin: 20px 0;
+      }
+  
+
+    .openProjectIcon {
+      color: #3a62ff;
+    }
+
+    .project_type {
+      display: flex;
+      p {
+        background-color: #3a62ff;
+        padding: 6px 10px;
+        border-radius: 5px;
+        color: white;
+        width: fit-content;
+        margin: 15px 5px 0px 5px;
+      }
+
+      .project_status{
+        background-color: #FF0066;
+      }
+    }
+    .open_Project_New_Tab_Btn{
+      @include media('<=phone'){
+        width: 100%;
+      }
+    }
+  }
+
+  .right_content {
+    width: 30%;
+    @include media('<=phone'){
+      display:none;
+    }
+  }
+
+  .featured_image img {
+    border-radius: 20px;
+    width: 100%;
+  }
+}

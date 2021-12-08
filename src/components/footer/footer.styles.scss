@@ -1,0 +1,27 @@
+@import "../../styles breakpoints/breakpoints.scss";
+.footer_area {
+  max-width: 75%;
+  padding: 20px;
+  margin: 0px auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media("<=phone") {
+    flex-direction: column;
+  }
+
+  .footer_area_content {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    .lovedWebsite {
+      color: #3a62ff;
+    }
+  }
+}

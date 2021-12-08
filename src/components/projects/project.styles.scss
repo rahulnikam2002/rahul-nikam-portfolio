@@ -1,0 +1,78 @@
+
+@import "../../styles breakpoints/breakpoints.scss";
+
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+
+.project_area_title{
+    text-align: center;
+    margin-top: 40px;
+
+    span{
+        color: #3a62ff;
+    }
+}
+
+.project_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: 85%;
+    margin: 50px auto;
+
+    @include media('<=phone'){
+    grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .single_project_card{
+        width: 80%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 15px;
+        padding-bottom: 15px;
+        position: relative;
+
+        @include media('<=phone'){
+            width: 100%;
+        }
+
+        .project_type p{
+            width: fit-content;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: white;
+            position: absolute;
+            top: 0px;
+            right: 15px;
+            font-weight: 600;
+        }
+
+        img{
+            // width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            max-height: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card_data_without_img{
+            padding: 0px 15px;
+            .open_project_btn{
+                width: 100%;
+            }
+
+            .project_title{
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "short_name": "Rahul Nikam Portfolio",
+  "name": "Rahul Nikam Portfolio",
+  "icons": [
+    {
+      "src": "logo192",
+      "sizes": "1080x1080",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192",
+      "type": "image/png",
+      "sizes": "1080x1080"
+    },
+    {
+      "src": "logo192",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

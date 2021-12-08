@@ -1,0 +1,51 @@
+.hero_area {
+  max-width: 90%;
+  width: 100%;
+  margin: 0px auto;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../public/img/blob2.svg");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: top center;
+  background-position-y: -110px;
+  background-position-x: 180px;
+  position: relative;
+  z-index: 110;
+}
+
+.hero_area .left_info_area {
+  width: 50%;
+}
+
+.hero_area .left_info_area .slogan {
+  font-size: 16px;
+  color: #3a62ff;
+}
+
+.hero_area .left_info_area .hero_title {
+  font-size: 50px;
+  margin-top: 15px;
+  line-height: 1;
+}
+
+.hero_area .left_info_area .hero_description {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: -10px;
+}
+
+.hero_area .right_info_area {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../public//img/hero-man.png");
+  background-position: top;
+  background-size: cover;
+}
+/*# sourceMappingURL=hero-area.styles.css.map */

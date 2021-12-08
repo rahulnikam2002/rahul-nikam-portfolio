@@ -1,0 +1,248 @@
+@import '../../../styles breakpoints/breakpoints.scss';
+
+.project_box {
+  background-color: white;
+  //   box-shadow: rgba(100, 100, 111, 0.124) 0px 7px 29px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: fit-content;
+  padding: 1px 30px;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+
+  @include media ('<=phone'){
+      right: 30px;
+      top: 120px;
+    }
+
+    @include media ('<=verySmallPhone'){
+      right: 30px;
+      top: 80px;
+      padding: 1px 15px;
+    }
+
+  .project_placeholder {
+    display: flex;
+    align-items: center;
+    font-family: nunito;
+    @include media ('<=phone'){
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    @include media ('<=verySmallPhone'){
+      font-size: 10px;
+      margin-bottom: 24px;
+    }
+
+  
+
+    img {
+      width: 25px;
+      @include media ('<=verySmallPhone'){
+        width: 20px;
+
+      }
+      
+    }
+
+    .great_project {
+      font-weight: 700;
+      color: rgb(124, 123, 123);
+      
+    }
+  }
+
+  .project_counts {
+    margin-top: -40px;
+
+    @include media ('<=phone'){
+    margin-top: -35px;
+    }
+
+    h2 {
+      font-size: 33px;
+
+      @include media ('<=phone'){
+        margin-bottom: 28px;
+        font-size: 20px;
+      }
+      @include media ('<=verySmallPhone'){
+        font-size: 17px;  
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: -27px;
+      @include media ('<=phone'){
+        font-size: 12px;
+      }
+
+      .project_count_duration {
+        color: #3a62ff;
+      }
+    }
+  }
+}
+
+.certifiedDeveloperTag {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: fit-content;
+  padding: 1px 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: white;
+  opacity: 0.9;
+  
+
+  @include media('<=phone'){
+    top: 35%;
+    right: 5%;
+  }
+
+  .certified_tag {
+    display: flex;
+    align-items: center;
+    @include media ('<=phone'){
+      font-size: 13px;
+    }
+    img {
+      width: 25px;
+    }
+    p {
+      font-weight: 700;
+      color: rgb(124, 123, 123);
+    }
+  }
+
+  .certified_in {
+    text-align: center;
+    margin-top: -11px;
+    color: #3a62ff;
+    font-size: 17px;
+    font-weight: 600;
+    @include media ('<=phone'){
+      font-size: 13px;
+    }
+  }
+}
+
+
+.developer_card{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  left: 60%;
+  bottom: -80px;
+  background-color: white;
+  // opacity: 0.9;
+  @include media ('<=phone'){
+    // bottom: 45%;
+    // left: 35%;
+    // padding: 10px 10px;
+    display: none;
+  }
+
+
+  .developer_image{
+    width: 50px;
+    border-radius: 50%;
+    border: 2px dashed #3a62ff;
+  }
+
+  .developer_name{
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 3px;
+    @include media ('<=phone'){
+      font-size: 17px;
+
+    }
+  }
+
+  .developer_occupation{
+    font-weight: 600;
+    color: rgb(124, 123, 123);
+    margin-top: -20px;
+    @include media ('<=phone'){
+      font-size: 11px;
+    }
+  }
+
+  .followers_clients{
+    display: flex;
+    align-items: center;
+    margin-top: -16px;
+    text-align: center;
+
+    div{
+      margin: 0px 10px;
+
+      .FC_title{
+        font-weight: 600;
+        color: rgb(124, 123, 123);
+        @include media ('<=phone'){
+          font-size: 14px;
+        }
+      }
+      .FC_count{
+        color: #3a62ff;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: -10px;
+        margin-bottom: 0;
+        @include media ('<=phone'){
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .contact_developer_option{
+    display: flex;
+    align-items: center;
+    // position: relative;
+    .chat_option, .call_option{
+      margin: 0px 3px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      width: fit-content;
+      position: absolute;
+      background-color: white;
+      top: -10px;
+      right: 30%;
+      img{
+        width: 15px;
+      }
+    }
+    .chat_option{
+      right: 50%;
+    }
+  }
+}
+
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 5px); }
+  to   { transform: translate(0, -0px); }    
+}

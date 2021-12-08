@@ -1,0 +1,97 @@
+@import "../../styles breakpoints/breakpoints.scss";
+
+
+.hero_area {
+  max-width: 90%;
+  width: 100%;
+  margin: 0px auto;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../public/img/blob2.svg");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: top center;
+  background-position-y: -110px;
+  background-position-x: 180px;
+  position: relative;
+  z-index: 9;
+  @include media ('<=phone'){
+  background-position: top left;
+  background-position-x: -70px;
+  background-position-y: -65px;
+  background-size: 250px;
+  margin-top: 30px;
+  flex-direction: column-reverse;
+  height: 100vh;
+  }
+
+
+  .left_info_area {
+    width: 50%;
+    margin-top: 20px;
+
+    @include media('<=phone'){
+      width: 95%;
+    }
+
+    .slogan {
+      font-size: 16px;
+      color: #3a62ff;
+      @include media('<=verySmallPhone'){
+        font-size: 13px;
+      }
+    }
+
+    .hero_title {
+      font-size: 50px;
+      margin-top: 15px;
+      line-height: 1;
+
+      @include media('<=verySmallPhone'){
+        font-size: 28px;
+      }
+
+      
+    }
+
+    .hero_description {
+      font-size: 18px;
+      font-weight: 600;
+      width: 100%;
+      margin-top: -10px;
+
+      @include media('<=verySmallPhone'){
+        font-size: 14px;
+      }
+
+    }
+
+
+  }
+
+  .right_info_area {
+    width: 50%;
+    height: 100%;
+    // background-image: url('../../public//img/hero-man.png');
+    background-image: url('../../public/img/hero-man-min.png');
+    background-position: top;
+    background-size: cover;
+    // img {
+    //   width: 100%;
+    // }
+    @include media ('<=phone'){
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+.aboutPageHeroComponent{
+  display: flex;
+  align-items: center;
+  height:60vh;
+}

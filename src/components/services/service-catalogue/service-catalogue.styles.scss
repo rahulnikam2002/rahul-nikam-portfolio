@@ -1,0 +1,53 @@
+@import '../../../styles breakpoints/breakpoints.scss';
+
+
+.my_services{
+    width: 40%;
+    background-image: linear-gradient(to bottom, #3a62ff, #3851b8);
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    @include media('<=phone'){
+        width: 88%;
+    }
+
+    .main_Service_box{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        @include media('<=phone'){
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            transition: 800ms ease-in-out;
+            cursor: pointer;
+            // @include media('<=phone'){
+            //     transform: scale(1.02);
+            // }
+        }
+        
+        .service_info{
+            margin: 0px 20px;
+            h3{
+                font-size: 25px;
+                margin: 0;
+                @include media('<=phone'){
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-size: 14px;
+                margin-top: 4px;
+                margin-bottom: 0;
+                font-weight: 400;
+            }
+        }
+    }
+}

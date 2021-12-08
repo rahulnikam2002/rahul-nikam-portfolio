@@ -1,0 +1,239 @@
+.project_box {
+  background-color: white;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 30px;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+}
+
+.project_box .project_placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: nunito;
+}
+
+.project_box .project_placeholder img {
+  width: 25px;
+}
+
+.project_box .project_placeholder .great_project {
+  font-weight: 700;
+  color: #7c7b7b;
+}
+
+.project_box .project_counts {
+  margin-top: -40px;
+}
+
+.project_box .project_counts h2 {
+  font-size: 33px;
+}
+
+.project_box .project_counts p {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: -27px;
+}
+
+.project_box .project_counts p .project_count_duration {
+  color: #3a62ff;
+}
+
+.certifiedDeveloperTag {
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.certifiedDeveloperTag .certified_tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certifiedDeveloperTag .certified_tag img {
+  width: 25px;
+}
+
+.certifiedDeveloperTag .certified_tag p {
+  font-weight: 700;
+  color: #7c7b7b;
+}
+
+.certifiedDeveloperTag .certified_in {
+  text-align: center;
+  margin-top: -11px;
+  color: #3a62ff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.developer_card {
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  left: 60%;
+  bottom: -80px;
+  background-color: white;
+}
+
+.developer_card .developer_image {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px dashed #3a62ff;
+}
+
+.developer_card .developer_name {
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 3px;
+}
+
+.developer_card .developer_occupation {
+  font-weight: 600;
+  color: #7c7b7b;
+  margin-top: -20px;
+}
+
+.developer_card .followers_clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -16px;
+  text-align: center;
+}
+
+.developer_card .followers_clients div {
+  margin: 0px 10px;
+}
+
+.developer_card .followers_clients div .FC_title {
+  font-weight: 600;
+  color: #7c7b7b;
+}
+
+.developer_card .followers_clients div .FC_count {
+  color: #3a62ff;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.developer_card .contact_developer_option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.developer_card .contact_developer_option .chat_option, .developer_card .contact_developer_option .call_option {
+  margin: 0px 3px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  right: 30%;
+}
+
+.developer_card .contact_developer_option .chat_option img, .developer_card .contact_developer_option .call_option img {
+  width: 15px;
+}
+
+.developer_card .contact_developer_option .chat_option {
+  right: 50%;
+}
+
+.floating {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@-webkit-keyframes floating {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+/*# sourceMappingURL=project.styles.css.map */

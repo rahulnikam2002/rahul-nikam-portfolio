@@ -1,0 +1,130 @@
+@import '../../../styles breakpoints/breakpoints.scss';
+
+.contact_form_section {
+  max-width: 48%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+
+  @include media('<=phone'){
+      max-width: 75%;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form_title {
+      color: #3a62ff;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: start;
+      width: 100%;
+    }
+
+    .form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @include media('<=phone'){
+        flex-direction: column;
+    }
+
+      .left_form {
+        width: 50%;
+        @include media('<=phone'){
+            width: 100%;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px 50px;
+          font-size: 16px;
+          border-radius: 7px;
+          outline: none;
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          font-family: nunito;
+        }
+
+        .input_section {
+          position: relative;
+          margin: 20px 0px;
+          width: 69%;
+        }
+
+        .form_icon {
+          position: absolute;
+          top: 44px;
+          left: 0;
+          padding-left: 9px;
+          font-size: 27px;
+          color: #3a62ff;
+        }
+      }
+
+      .right_form {
+        width: 47%;
+        @include media('<=phone'){
+            width: 95%;
+        }
+        textarea {
+          resize: none;
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border-radius: 7px;
+          outline: none;
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          margin: 0px;
+          width: 281px;
+          height: 225px;
+
+          @include media('<=phone'){
+            width: 100%;
+        }
+        }
+      }
+    }
+    .contact_reason {
+      text-align: start;
+      width: 100%;
+    }
+    .contacted_for {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      // justify-content: space-evenly;
+      .reason_block{
+        width: 100%;
+
+      input {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding: 10px 10px;
+        margin: 0px 10px 25px 0px;
+        border: 1px solid #00000000;
+        border-radius: 6px;
+        background: white;
+        text-align: start;
+        width: 96%;
+
+        @include media('<=phone'){
+            width: 95%;
+        }
+
+      }
+
+    }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../styles breakpoints/breakpoints.scss";
+
+.my_skills {
+  max-width: 70%;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+
+  .small_title {
+    text-align: center;
+    color: #3a62ff;
+  }
+
+  .section_title {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .skills_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    @include media("<=phone") {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single_skill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+      border-radius: 10px;
+      margin: 10px;
+
+      @include media("<=phone") {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+
+      .skill_info {
+        width: 50%;
+      }
+      .skill_image {
+        width: 10%;
+        height: 46%;
+        margin-right: 10px;
+
+        @include media("<=phone") {
+          width: 10%;
+          height: 46%;
+        }
+      }
+
+      .skill_name {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .skill_description {
+        margin-top: -15px;
+      }
+    }
+  }
+}

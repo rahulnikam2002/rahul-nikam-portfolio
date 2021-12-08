@@ -1,0 +1,47 @@
+.my_services {
+  width: 40%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3a62ff), to(#3851b8));
+  background-image: linear-gradient(to bottom, #3a62ff, #3851b8);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.my_services .main_Service_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.my_services .main_Service_box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 800ms ease-in-out;
+  transition: 800ms ease-in-out;
+  cursor: pointer;
+}
+
+.my_services .main_Service_box .service_info {
+  margin: 0px 20px;
+}
+
+.my_services .main_Service_box .service_info h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.my_services .main_Service_box .service_info p {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+/*# sourceMappingURL=service-catalogue.styles.css.map */

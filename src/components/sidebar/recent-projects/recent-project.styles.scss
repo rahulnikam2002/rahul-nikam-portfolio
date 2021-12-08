@@ -1,0 +1,52 @@
+.recent_project_sidebar {
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  border-radius: 15px;
+
+  .projects_listing {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .project_image {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 8px;
+        max-height: 100%;
+      }
+    }
+    .project_info {
+      margin-top: -17px;
+      margin-left: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    .link{
+        text-decoration: none;
+
+      .project_name {
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+      }
+    }
+      .project_type {
+        margin-top: -11px;
+
+        p {
+          width: fit-content;
+          background-color: #3a62ff;
+          color: white;
+          font-size: 8px;
+          padding: 4px 10px;
+          border-radius: 30px;
+        }
+      }
+    }
+    
+  }
+}
