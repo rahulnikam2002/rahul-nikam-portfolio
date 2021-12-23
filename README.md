@@ -1,5 +1,5 @@
 # check live
-<a href="https://merahulnikam.web.app">Visit Live - Rahul Nikam's Portfolio</a>
+<a href="https://merahulnikam.web.app" target="_blank">Visit Live - Rahul Nikam's Portfolio</a>
 
 # Getting Started with Create React App
 
