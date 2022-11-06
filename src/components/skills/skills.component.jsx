@@ -43,6 +43,10 @@ export const Skills = () => {
       skillIcon: reactJsIcon,
     },
     {
+      skillName: "React Native",
+      skillIcon: reactJsIcon,
+    },
+    {
       skillName: "NodeJS",
       skillIcon: nodeJsIcon,
     },
@@ -73,15 +77,7 @@ export const Skills = () => {
     {
       skillName: "WordPress",
       skillIcon: wordPressIcon,
-    },
-    {
-      skillName: "Digital Marketing",
-      skillIcon: digitalMarketing,
-    },
-    {
-      skillName: "Affiliate Marketing",
-      skillIcon: affiliateMarketing,
-    },
+    }
   ];
   return (
     <div className="my_skills" data-aos='fade-up'>

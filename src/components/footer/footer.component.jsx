@@ -7,9 +7,9 @@ export const Footer = () => {
     <div className="footer">
       <div className="footer_area">
         <h1 className="footer_area_content">
-         <span className='lovedWebsite'>Loved website??</span> Ya Rahul always makes things magical!
+         <span className='lovedWebsite'>Liked it??</span> Hehe Rahul always make things magical!
         </h1>
-        <h1 className="footer_area_content">Copyright Rahul Nikam 2021</h1>
+        <h1 className="footer_area_content">Copyright Rahul Nikam 2022</h1>
       </div>
     </div>
   );

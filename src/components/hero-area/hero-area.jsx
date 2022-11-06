@@ -62,7 +62,7 @@ export const HeroArea = (props) => {
             MongoDB, RestAPIs, WordPress
           </p>
           <a
-            href="https://drive.google.com/file/d/1gftS4pbu8lo5qObpNJr7R8jxQRfxYajR/view"
+            href="https://drive.google.com/file/d/19PA0X2aNR_MJF9xeWrfQhzyiuRMy0Z-F/view?usp=share_link"
             target="_blank"
             rel="noreferrer"
           >
@@ -91,7 +91,7 @@ export const HeroArea = (props) => {
             MongoDB, RestAPIs, WordPress
           </p>
           <a
-            href="https://drive.google.com/file/d/1gftS4pbu8lo5qObpNJr7R8jxQRfxYajR/view"
+            href="https://drive.google.com/file/d/19PA0X2aNR_MJF9xeWrfQhzyiuRMy0Z-F/view?usp=share_link"
             target="_blank"
             rel="noreferrer"
           >

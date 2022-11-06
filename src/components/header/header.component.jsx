@@ -112,7 +112,7 @@ export const Header = (props) => {
             </a>
 
           </div>
-          <a href="https://drive.google.com/file/d/1gftS4pbu8lo5qObpNJr7R8jxQRfxYajR/view" target='_blank' rel="noreferrer">
+          <a href="https://drive.google.com/file/d/19PA0X2aNR_MJF9xeWrfQhzyiuRMy0Z-F/view?usp=share_link" target='_blank' rel="noreferrer">
           <div className="get_resume_btn_area">
             <Button className="resume_btn">Get my Resume</Button>
           </div>
