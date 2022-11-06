@@ -8,7 +8,7 @@ import './contact.styles.scss'
 export const ContactMe = () => {
 
   useEffect(() => {
-    document.title = 'Contact Rahul Nikam'
+    document.title = 'Contact | Rahul Nikam'
   }, []);
 
   return (
