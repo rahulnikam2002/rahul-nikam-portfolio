@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.styles.scss";
 
 export const Footer = () => {
-  const styling = {};
+  // const styling = {};
   return (
     <div className="footer">
       <div className="footer_area">

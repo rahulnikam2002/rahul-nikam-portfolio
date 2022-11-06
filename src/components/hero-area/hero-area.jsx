@@ -8,7 +8,7 @@ import {
 import "./hero-area.styles.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import homepageHeaderImage from "../../public/img/hero-man.png";
+// import homepageHeaderImage from "../../public/img/hero-man.png";
 
 export const HeroArea = (props) => {
   useEffect(() => {
@@ -30,16 +30,16 @@ export const HeroArea = (props) => {
   return (
     <div
       className={
-        props.whichPage == "aboutPage" ? "aboutPageHeroComponent" : "hero_area"
+        props.whichPage === "aboutPage" ? "aboutPageHeroComponent" : "hero_area"
       }
     >
-      {props.whichPage == "aboutPage" ? (
+      {props.whichPage === "aboutPage" ? (
         <div
           data-aos="fade-up"
           className="left_info_area"
           style={aboutPageStyle}
         >
-          {props.whichPage == "aboutPage" ? (
+          {props.whichPage === "aboutPage" ? (
             <p className="slogan">About me</p>
           ) : (
             <p className="slogan">
@@ -54,7 +54,7 @@ export const HeroArea = (props) => {
           <p
             className="hero_description"
             style={
-              props.whichPage == "aboutPage" ? { aboutPageHeroArea } : null
+              props.whichPage === "aboutPage" ? { aboutPageHeroArea } : null
             }
           >
             A passionate developer and 3rd Year CS student who works in
@@ -64,6 +64,7 @@ export const HeroArea = (props) => {
           <a
             href="https://drive.google.com/file/d/1gftS4pbu8lo5qObpNJr7R8jxQRfxYajR/view"
             target="_blank"
+            rel="noreferrer"
           >
             <Button className="hero_button" margin={`0px`}>
               Get my Resume
@@ -72,7 +73,7 @@ export const HeroArea = (props) => {
         </div>
       ) : (
         <div data-aos="fade-up" className="left_info_area">
-          {props.whichPage == "aboutPage" ? (
+          {props.whichPage === "aboutPage" ? (
             <p className="slogan">About me</p>
           ) : (
             <p className="slogan">
@@ -92,6 +93,7 @@ export const HeroArea = (props) => {
           <a
             href="https://drive.google.com/file/d/1gftS4pbu8lo5qObpNJr7R8jxQRfxYajR/view"
             target="_blank"
+            rel="noreferrer"
           >
             <Button className="hero_button" margin={`0px`}>
               Get my Resume
@@ -100,7 +102,7 @@ export const HeroArea = (props) => {
         </div>
       )}
 
-      {props.whichPage == "aboutPage" ? (
+      {props.whichPage === "aboutPage" ? (
         <div
           className="right_info_area"
           style={{ backgroundImage: "none" }}

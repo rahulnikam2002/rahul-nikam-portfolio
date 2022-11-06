@@ -18,7 +18,7 @@ export const SingleProjectPage = (props) => {
       top: 0,
       left: 0,
     });
-  }, []);
+  }, [dataToBeLoaded, data]);
 
   return (
     <div>
@@ -46,6 +46,7 @@ export const SingleProjectPage = (props) => {
                     href={data[dataToBeLoaded].projectLiveLink}
                     className="openProjectIcon"
                     target='_blank'
+                    rel="noreferrer"
                   >
                     <OpenInNewIcon />
                   </a>
@@ -66,6 +67,7 @@ export const SingleProjectPage = (props) => {
               target="_blank"
               rel="noreferrer"
               href={data[dataToBeLoaded].projectLiveLink}
+              
             >
               <Button className="open_Project_New_Tab_Btn">
                 Visit Live Project
