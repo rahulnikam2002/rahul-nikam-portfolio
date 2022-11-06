@@ -81,5 +81,6 @@ export const projectData = [
           <li>HTML &amp; CSS for Structure and Designing</li>
           <li>Bootstrap.</li>
       </ol>`,
-    }
+    },
+    
   ];
