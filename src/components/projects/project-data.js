@@ -57,6 +57,11 @@ export const projectData = [
       <li><strong><a href="https://www.linkedin.com/in/siddhi-mahadik-470092212/" target="_blank"><span style="color:#077052">Siddhi Mahadik</span></a></strong></li>
       <li><strong><a href="https://www.linkedin.com/in/nisha-patil-44b645214/" target="_blank"><span style="color:#077052">Nisha Patil</span></a></strong></li>
     </ol>
+    
+    <div>
+      <h4>Affiliated Product</h4>
+      <p>Try one of the best Product Hair Volumizing product by Urbangabru - <span><a href="https://amzn.to/3YGeiZ7">Hair Volumizing Powder Wax for Men by Urbangabru</a></span> </p>
+    </div>
     `,
   },
   {
