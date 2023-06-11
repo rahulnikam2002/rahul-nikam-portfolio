@@ -91,7 +91,7 @@ export const HeroArea = (props) => {
             MongoDB, RestAPIs, WordPress
           </p>
           <a
-            href="https://drive.google.com/file/d/19PA0X2aNR_MJF9xeWrfQhzyiuRMy0Z-F/view?usp=share_link"
+            href="https://drive.google.com/file/d/1-DTYMjyD9bDp0B5-X_-442liMngNc2kw/view?usp=drivesdk"
             target="_blank"
             rel="noreferrer"
           >
